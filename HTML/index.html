@@ -1,142 +1,89 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Gateway IT</title>
-  <script defer src="./../JS/JavaScript.js"></script>
-  <link rel="shortcut icon" href="../IMG/Capturagate-removebg-preview.png" type="image/x-icon" />
-  <link rel="stylesheet" href="../CSS/style.css" />
-</head>
-
-<body class="body body-index">
-  <div class="loader-container">
-    <div class="loader">
-      <div class="dot dot1"></div>
-      <div class="dot dot2"></div>
-      <div class="dot dot3"></div>
-    </div>
-  </div>
-  
-  <main class="container">
-    <div id="div" class="div"></div>
-    <header class="lateral mode">
-      <!-- <button onclick="show()" class="btn"></button> -->
-      <a href="#">
-
-        <img src="../IMG/gateway-logo.webp" alt="menu" />
-      </a>
-      <nav class="nav-menu">
-        <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Nosotros</a></li>
-          <li><a href="#">Servicios</a></li>
-          <li><a href="#">I+D+i</a></li>
-          <li><a href="#">Proyectos</a></li>
-          <li><a href="#">Trabaja con Nosotros</a></li>
-          <li><a href="#">Blog</a></li>
-        </ul>
-      </nav>
-    </header>
-    <section class="cuerpo">
-      <div class="principal">
-        <div class="img">
-          <img src="./../IMG/img2.jpeg" alt="" srcset="" />
-        </div>
-        <div class="titulo">
-          <h1 class="titulo-index">Innovation Technologies</h1>
-          <h1 class="letter-animation">
-            <span>G</span>
-            <span>A</span>
-            <span>T</span>
-            <span>E</span>
-            <span>W</span>
-            <span>A</span>
-            <span>Y</span>
-            <span> </span>
-            <span>I</span>
-            <span>T</span>
-          </h1>
-          <div style="width: 100%; height: 100%" class="parrafos mode fondo">
-            <p>
-              Bienvenido a <b>Gateway IT</b>, una empresa especializada en
-              brindar soluciones tecnológicas de vanguardia. Con la
-              combinación de nuestro equipo altamente capacitado y la
-              tecnología de punta, ofrecemos soluciones personalizadas en
-              hardware y software utilizando las últimas tendencias en
-              ingeniería, innovación, investigación y desarrollo.
-            </p>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./../css/style.css" />
+    <link rel="stylesheet" href="./../css/index.css" />
+    <script defer src="./../javascript/script.js"></script>
+    <script defer src="./../javascript/index.js"></script>
+    <title>Gateway</title>
+  </head>
+  <body>
+    <main class="main">
+      <header class="header">
+        <div class="div-efect"></div>
+        <a href="index.html" class="logo">
+          <img src=./../images/gateway-logo.webp alt="logo">
+        </a>
+        <nav class="links">
+          <li><a class="active" href="index.html">Inicio</a></li>
+          <li><a href="about.html">Nosotros</a></li>
+          <li><a href="services.html">Servicios</a></li>
+          <li><a href="I+D+i.html">I+D+i</a></li>
+          <li><a href="projects.html">Proyectos</a></li>
+          <li><a href="work.html">Trabaja con Nosotros</a></li>
+          <li><a href="DreamBox.html">Dream Box</a></li>
+        </nav>
+      </header>
+      <button onclick="show_hidden('down','up')" class="active-btn"  id="down"><i class="bi bi-chevron-down"></i></button>
+      <button onclick="show_hidden('down','up')" id="up"><i class="bi bi-chevron-up"></i></button>
+      <article class="container">
+        <section class="text-primary">
+          <div class="imagen-main div fade-in">
+            <img src="./../images/4.png" alt="tecnologia" />
           </div>
+          <div class="title div">
+            <h1 class="title-index fade-in">Innovation Technologies</h1>
+            <h1 class="letter-animation">
+              <span>G</span>
+              <span>A</span>
+              <span>T</span>
+              <span>E</span>
+              <span>W</span>
+              <span>A</span>
+              <span>Y</span>
+              <span> </span>
+              <span>I</span>
+              <span>T</span>
+            </h1>
+            <div class="p fade-in">
+              <p>
+                Bienvenido a <b>Gateway IT</b>, una empresa especializada en
+                brindar soluciones tecnológicas de vanguardia. Con la
+                combinación de nuestro equipo altamente capacitado y la
+                tecnología de punta, ofrecemos soluciones personalizadas en
+                hardware y software utilizando las últimas tendencias en
+                ingeniería, innovación, investigación y desarrollo.
+              </p>
+            </div>
 
-          <a href="#informacion" class="scroll-button">
-            <button onclick="" class="btn">¿QUIÉNES SOMOS?</button>
-          </a>
-        </div>
-      </div>
-      <section class="white">
-        <div class="acerca">
-          <div id="informacion">
+            <a class="scroll-button">
+              <button onclick="scrollToSection()" class="btn fade-in">¿QUIÉNES SOMOS?</button>
+            </a>
+          </div>
+        </section>
+        <section id="secondary" class="text-secondary fade-in">
+          <div id="information">
             <h2 class="sub">| Acerca de nosotros</h2>
-            <h1 class="titulo">¿QUIÉNES SOMOS?</h1>
-            <div style="width: 100%; height: 100%" class="parrafos mode fondo">
+            <h1 class="title">¿QUIÉNES SOMOS?</h1>
+            <div class="p">
               <p>
                 <b>Gateway IT.</b> Gateway IT es una empresa nacida en el caribe
                 colombiano, especializada en crear soluciones innovadoras de
-                base tecnológica, mezclando la creatividad del capital humano
-                y los avances de cuarta y quinta revolución industrial,
-                basados en procesos de investigación aplicada.
+                base tecnológica, mezclando la creatividad del capital humano y
+                los avances de cuarta y quinta revolución industrial, basados en
+                procesos de investigación aplicada.
               </p>
             </div>
-          </div>
-        </div>
-        <div class="info">
-          <div id="div-1">
-            <h3>Compromiso</h3>
-            <p id="Compromiso" class="hidden">
-              En Gateway I.T, nos enorgullece estar comprometidos con el
-              desarrollo sostenible y apoyamos los Objetivos de Desarrollo
-              Sostenible (ODS) a través de nuestras soluciones
-              tecnológicas. Nos esforzamos por mejorar no solo nuestros
-              productos y servicios, sino también la región en la que
-              operamos
-            </p>
-          </div>
-          <div id="div-2">
-            <h3>Misión</h3>
-            <p id="Misión" class="hidden">
-              Contar con aliados en Colombia y a nivel internacional
-              quienes reconozcan y referencien a Gateway IT como una
-              empresa generadora de grandes soluciones basadas en ciencia,
-              tecnología e innovación.
-            </p>
-          </div>
-          <div id="div-3">
-            <h3>Visión</h3>
-            <p id="Visión" class="hidden">
-              En Gateway I.T, nuestra visión es convertirnos en el 2025 en
-              una empresa y centro de desarrollo tecnológico líder
-              reconocida a nivel nacional e internacional en la generación
-              de soluciones y proyectos de ciencia, tecnología e
-              innovación en Colombia.
-            </p>
-          </div>
-        </div>
-        <!-- <div class="info">
-            <div class="info-img">
-              <a class="a-img" href="#">
-                <img
-                  src="../IMG/disenamos-a-tu-medida.webp"
-                  alt="Nuestros servicios"
-                />
-              </a>
-            </div>
-            <div class="info-info">
-              <div class="contenido">
-                <span>01</span>
-                <div>
-                  <h3>Compromiso</h3>
-                  <p>
+            <div class="info">
+                <div id="div-1">
+                  <div id="img-1" class="element img-3">
+                    <h3>COMPROMISO</h3>
+                  </div>
+                  <h3>COMPROMISO</h3>
+                  <p id="Compromiso" class="p hidden">
                     En Gateway I.T, nos enorgullece estar comprometidos con el
                     desarrollo sostenible y apoyamos los Objetivos de Desarrollo
                     Sostenible (ODS) a través de nuestras soluciones
@@ -145,24 +92,24 @@
                     operamos
                   </p>
                 </div>
-              </div>
-              <div class="contenido">
-                <span>02</span>
-                <div>
-                  <h3>Misión</h3>
-                  <p>
+                <div id="div-2">
+                  <div id="img-2" class="element img-6">
+                    <h3>MISIÓN</h3>
+                  </div>  
+                  <h3>MISIÓN</h3>
+                  <p id="Misión" class="p hidden">
                     Contar con aliados en Colombia y a nivel internacional
                     quienes reconozcan y referencien a Gateway IT como una
                     empresa generadora de grandes soluciones basadas en ciencia,
                     tecnología e innovación.
                   </p>
                 </div>
-              </div>
-              <div class="contenido">
-                <span>03</span>
-                <div>
-                  <h3>Visión</h3>
-                  <p>
+                <div id="div-3">
+                  <div id="img-3" class="element img-5">
+                    <h3>VISIÓN</h3>
+                  </div>
+                  <h3>VISIÓN</h3>
+                  <p id="Visión" class="p hidden">
                     En Gateway I.T, nuestra visión es convertirnos en el 2025 en
                     una empresa y centro de desarrollo tecnológico líder
                     reconocida a nivel nacional e internacional en la generación
@@ -171,20 +118,23 @@
                   </p>
                 </div>
               </div>
-            </div>
-          </div> -->
-      </section>
+          </div>
+          
+        </section>
+      </article>
       <footer class="footer">
         <div>
-          <img src="./../IMG/gateway-logo.webp" alt="" />
+          <img src="./../images/gateway-logo.webp" alt="" />
         </div>
         <ul class="nosotros">
           <h2>Nosotros:</h2>
-          <li><a href="">Inicio</a></li>
-          <li><a href="">Servicios</a></li>
-          <li><a href="">Nosotros</a></li>
-          <li><a href="">Aliados</a></li>
-          <li><a href="">Contactos</a></li>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="about.html">Nosotros</a></li>
+          <li><a href="services.html">Servicios</a></li>
+          <li><a href="I+D+i.html">I+D+i</a></li>
+          <li><a href="projects.html">Proyectos</a></li>
+          <li><a href="work.html">Trabaja con Nosotros</a></li>
+          <li><a href="DreamBox.html">Dream Box</a></li>
         </ul>
 
         <ul class="contacto">
@@ -197,14 +147,11 @@
           <li>Teléfono: 3052442919</li>
           <li>contacto@</li>
         </ul>
-        <div class="redes">
+        <ul class="redes">
           <h2>Redes Sociales</h2>
           <div>imagenes</div>
-        </div>
-      </footer> 
-    </section>
-  </main>
-
-</body>
-
+        </ul>
+      </footer>
+    </main>
+  </body>
 </html>
