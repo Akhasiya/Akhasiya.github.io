@@ -1,0 +1,369 @@
+
+
+section {
+    position: relative;
+}
+section .column-c{
+    background-color: #131949;
+    padding: 10% 0px;
+}
+
+.title{
+    text-align: center;
+    font-size: 40px;
+    background-image: linear-gradient(140deg,#004872 0%,rgba(41,17,96,0.8) 100%),url(./../../../public/img/Nosotros/disenamos-a-tu-medida.webp);
+    background-position: center;
+    background-color: #394de1;
+    color: #fff;
+    padding: 3%;
+}
+
+.column-c {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.column-2{
+background-color: #fff;
+padding: 0 5%;
+}
+
+/*img*/
+.column-2 img{
+    width: 100%;
+    height: auto;
+}
+
+.column-3 {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    font-size: 1.25rem;
+    text-align: center;
+    justify-content: center;
+    margin: 30px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    width: 1300px;
+    color: #fff;
+}
+
+.column-3 strong{
+    background: #00ECFB;
+    background: -webkit-linear-gradient(to bottom, #00b5d0 0%, #00ECFB 100%);
+    background: -moz-linear-gradient(to bottom,#00b5d0 0%, #00ECFB 100%);
+    background: linear-gradient(to bottom,#00b5d0 0%, #00ECFB 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+    text-align: center;
+    padding: 10px;
+}
+
+.column-f strong{
+    background: #00ECFB;
+    background: -webkit-linear-gradient(to bottom, #00ECFB 0%, #008BD8 100%);
+    background: -moz-linear-gradient(to bottom, #00ECFB 0%, #008BD8 100%);
+    background: linear-gradient(to bottom, #00ECFB 0%, #008BD8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+    display: block;
+    }
+
+/* */
+.section-1 {
+    background: rgba(255, 255, 255, 0.2);
+    background-position: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    border-radius: 0em 12em 12em 0em;
+    margin: 40px 100px 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 5px solid #fff;
+    border-left: 1px #fff;
+}
+
+.section-1 .text {
+    text-align: left;
+    font-size: 1.5em;
+    color: #fff;
+    margin: 0 2em 0 2em;
+}
+
+.section-1 img {
+    max-width: 100%; /* La imagen ocupará como máximo el 100% del ancho del contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+    margin: 0 10em 0 3em;
+    padding-right: 90px;
+}
+
+.section-2 {
+    background: rgba(255, 255, 255, 0.2);
+    background-position: center;
+    /*padding-top: 5em;
+    padding-bottom: 5em;*/
+    border-radius: 12em 0em 0em 12em;
+    margin: 0 0 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 5px solid #fff;
+    border-right: 1px #fff;
+}
+
+.section-2 .text {
+    text-align: right;
+    font-size: 1.5em;
+    color: #fff;
+    margin: 0 2em 0 2em;
+}
+
+.section-2 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin: 0 2em 0 2em;
+}
+
+.section-3{
+    text-align: center;
+    justify-content: center;
+    font-size: 1.5em;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    
+}
+
+
+.section-3 .text p{
+    padding: 2em 2em 2em 2em;
+}
+
+/*---------Cards------------
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 5% 0 5% 0;
+}
+
+.container > * {
+    flex: 1 1 calc(33.33% - 20px); 
+    margin-bottom: 5em;
+    box-sizing: border-box;
+}
+
+.container .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .card .face {
+    width:600px;
+    transition: 0.5s;
+}
+
+.container .card .face.face1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(auto);
+    border-radius: 30px 30px 30px 30px;
+    background-image: linear-gradient(140deg,#004872 0%,rgba(41,17,96,0.8) 100%),url(./img/disenamos-a-tu-medida.png);
+    background-position: center;
+    background-color: #394de1;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+
+}
+
+.container .card:hover .face.face1 {
+    background: #394de1;
+    transform: translateY(0);
+}
+
+.container .card .face.face1 .content {
+    opacity: 0.5;
+    transition: 0.5s;
+    width: 400px;
+    text-align: center;
+}
+
+.container .card:hover .face.face1 .content {
+    opacity: 1;
+}
+
+.card .face.face1 img {
+    width: auto;
+    height: 300px;
+}
+
+.container .card .face.face1 .content h3 {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+
+.container .card .face.face2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+    margin-top: -210px;
+    border-radius: 0px 0px 30px 30px;
+    top:-20px;
+}
+
+.container .card:hover .face.face2 {
+    margin-top: 0;
+}
+
+.container .card .face.face2 .content p {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.container .card .face.face2 .content a {
+    margin: 15px 0 0;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #ffffff;
+    padding: 5px;
+    border: 1px solid #ffffff;
+}
+
+.container .card .face.face2 .content a:hover {
+    background: #ffffff;
+    color:#131949;
+}
+
+.face.face1 {
+    background: #333;
+    color: white;
+}
+
+.face.face1 img{
+    width:auto;
+    height:10%;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.face.face2 {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+
+.face .content h4{
+    font-size: 1.2em;
+}
+
+.face .content a {
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+}
+*/
+/*responsive*/
+/*columns*/
+
+@media (max-width: 768px) {
+
+    section {
+        padding: 20px;
+        position: relative;
+    } 
+}
+
+@media (max-width: 480px) {
+    
+    section {
+        padding: 20px;
+        position: relative;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-1 {
+        flex-direction: column;
+        padding: 5em 0 0 0;
+        border-radius: 0em 10em 10em 0em;
+        margin:30px 0
+    }
+
+    .section-2 {
+        flex-direction: column;
+        padding: 0 0 5em 0;
+        border-radius: 10em 0em 0em 10em;
+        margin:30px 0
+    }
+}
+
+/*cards*/
+
+@media (max-width: 768px) {
+
+    .container .card .face {
+        width: 370px;
+        height: 250px;
+        transition: 0.5s;
+    }
+
+    .container .card .face.face2 {  
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        box-sizing: border-box;
+        box-shadow: 0 20px 50px rgba(56, 55, 55, 0.8);
+        margin-top: -230px;
+        border-radius: 30px 30px 30px 30px;
+        top:-20px;
+    }
+
+    .container .card .face.face1 .content {
+        opacity: 0.5;
+        transition: 0.5s;
+        margin-left: 5px;
+    width: 400px;
+
+    }
+
+    .card .face.face1 img{
+        width:auto;
+        height:100%;
+    }
+
+    .face.face1 img{
+        border-radius: 20px 20px 20px 20px;
+    }
+
+    .face.face2 .content {
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: calc(100% - 20px);
+    }
+}

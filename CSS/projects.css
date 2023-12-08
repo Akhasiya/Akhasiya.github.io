@@ -1,0 +1,260 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-out;
+}
+.title {
+  text-align: center;
+  font-size: 3rem;
+}
+.projects {
+  width: 100%;
+  padding: 1rem;
+  color: rgb(176, 181, 228);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100%;
+  margin-bottom: 10rem;
+}
+.aside {
+  min-width: 220px;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.aside nav{
+    width: 100%;
+}
+.aside li {
+  list-style-type: none;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0;
+  width: 130px;
+  margin-left: 20px;
+}
+.aside li:hover {
+  font-weight: 900;
+  color: white;
+  
+}
+.aside h3{
+    color: white;
+    font-size: 2rem;
+    width: 100%;
+    margin-left: 20px;
+}
+.active {
+  color: white;
+  font-weight: 900;
+  border-bottom: 3px solid rgb(111, 111, 222);
+}
+.div-projects {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  background:linear-gradient(to bottom right, #290e52, #00589258);
+  height: 100%;
+  min-height: 520px;
+  padding: 1rem;
+  border-radius: 20px;
+  box-shadow: 20px 20px 4rem rgb(111, 111, 222);
+}
+
+#div-1 , #div-2, #div-3{
+  display: flex;
+  max-width: 80%;
+  width: 100%;
+  height: 100%;
+  min-width: 320px;
+  justify-content: end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#div-1 div,#div-2 div,#div-3 div {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  height: 220px;
+  box-shadow: 15px 15px 2rem rgb(0, 0, 0);
+  margin-left: 7rem;
+  border-radius: 10px;
+  margin-right: -5rem;
+  background-color: rgba(255, 255, 255, 0.42);
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: 1s;
+  flex-wrap: wrap;
+  align-items: end;
+}
+#div-1 div:hover,#div-2 div:hover,#div-3 div:hover  {
+  box-shadow: 10px 10px 2rem rgb(51, 51, 184);
+  background-color: rgba(255, 255, 255);
+  transition: 1s;
+  margin-bottom: 6rem;
+}
+#div-1 div img,#div-2 div img ,#div-3 div img  {
+  width: 100%;
+  max-width: 500px !important;
+}
+#div-1 h3, #div-2 h3, #div-3 h3 {
+  background-color: rgba(0, 0, 0, 0.64);
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+#div-1.hidden, #div-2.hidden, #div-3.hidden{
+  display: none;
+}
+
+/* Invesiones */
+.inversion .p{
+  padding-left: 10rem;
+  padding-right: 10rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.inversion .div-inversion{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10%;
+  
+}
+.div-inversion .div-contain{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 30%;
+  max-width: 600px;
+  min-width: 320px;
+  min-height: 600px;
+  background-color: white;
+  border-radius: 30px 30px 20px 20px;
+  box-shadow: 10px 10px 2rem black;
+  margin-bottom: 2rem;
+ 
+  
+  
+  overflow: hidden;
+}
+.div-contain div{
+  width: 100%;
+  
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+.div-contain .div-img{
+  background-color:#A3326B;
+  border-radius: 20px 20px 20px 20px;
+  min-height: 200px;
+  height: 45%;
+  z-index: 1;
+  box-shadow: 5px 5px 1rem #290e52;
+  opacity: 90%;
+}
+.div-contain img{
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  border: 3px solid rgb(255, 255, 255);
+  padding: 10px;
+  
+}
+
+.div-contain .div-text{
+  background-color: white;
+  color: #18082f;
+  border-radius: 0 20px 20px 20px;
+  min-height: 300px;
+  height: 55%;
+  max-height: 500px;
+  padding-left: 10px;
+  padding-right: 10px;
+  
+}
+.div-text h3{
+  padding: 0;
+  margin: 0;
+  font-size: 1.5rem;
+}
+.div-text p{
+  font-size: 1rem;
+  text-align: justify;
+  padding: 0;
+  margin: 0;
+}
+.div-text a{
+  text-decoration: none;
+  background: transparent;
+  color: #A3326B;;
+  padding: 10px;
+  border-radius: 20px;
+  border: 3px solid #A3326B;
+}
+.div-text a:hover{
+  background-color: #A3326B;
+  color: white;
+}
+
+@media screen and (max-width:868px) {
+  .inversion .div-inversion{
+    justify-content: center;
+  }
+  .inversion .p{
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+  #div-1 div,#div-2 div,#div-3 div {
+   margin: 0;
+   margin-bottom: 2rem;
+    width: 100%;
+  }
+  #div-1 , #div-2, #div-3{
+    justify-content: center;
+  }
+  .div-projects{
+    justify-content: center;
+    
+  }
+  .aside li{
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .aside nav{
+    margin-bottom: 3rem;
+  }
+  .projects {
+    padding: 0;
+    margin: 0;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
+  .div-inversion .div-contain{
+    min-height: 750px;
+  }
+
+}

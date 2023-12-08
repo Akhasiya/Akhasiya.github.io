@@ -1,0 +1,233 @@
+.section-show {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+}
+
+.seccion-informacion {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/backgraund_titulo.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+
+
+.parrafo {
+    margin-top: 5%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    font-size: 400%;
+    animation-name: moverP;
+    animation-duration: 1s;
+}
+
+
+
+.logo {
+    height: 20%;
+    width: auto;
+    animation-delay: 3s, 3s;
+    animation: moverImg 1s forwards;
+}
+
+
+
+.seccion-informacion .titulo img {
+    height: 50%;
+    width: auto;
+    margin-left: 8%;
+
+}
+
+
+
+.seccion-informacion-2 {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 5%;
+    /* background-image: url("../img/backgraund_descripcion.png"); */
+
+}
+
+.seccion-informacion-2 img {
+    margin-top: 8%;
+    height: 90%;
+    width: auto;
+    margin-left: 8%;
+}
+
+
+.seccion-informacion-2 p {
+    text-align: justify;
+    font-size: x-large;
+
+}
+
+
+
+.info-politicas {
+    display: grid;
+    grid-template-columns: auto;
+    margin-right: 2%;
+    justify-items: center;
+}
+
+
+
+.line {
+    height: 7%;
+    width: 100%;
+    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+    border-radius: 40px;
+    margin-top: 20%;
+    margin-bottom: 2%;
+
+}
+
+
+
+.seccion-indicadores {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    align-content: center;
+}
+
+
+.line2 {
+
+    height: 20%;
+    width: 70%;
+    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+    border-radius: 40px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+
+}
+
+.seccion-indicadores {
+    display: grid;
+    width: 100%;
+    height: 85vh;
+    align-content: center;
+    justify-items: center;
+}
+
+.seccion-indicadores .contenedor {
+    width: 80%;
+    background: rgb(0, 0, 0, .2);
+    padding: 0 20px;
+    border-radius: 20px;
+}
+
+.seccion-indicadores .indicador {
+    margin: 20px 0;
+}
+
+.seccion-indicadores .indicador p {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: x-large;
+}
+
+
+.seccion-indicadores .indicador .progress {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    background: #999;
+    border-radius: 6px;
+    overflow: hidden;
+    margin: 2px 0;
+   
+}
+
+.seccion-indicadores .indicador .progress::before {
+    content: '';
+    position: absolute;
+    width: var(--wth);
+    height: 100%;
+    background: #d6ff21d8;
+    animation: loading-indicators 5s ease;
+    animation-iteration-count: infinite;
+}
+
+
+
+.seccion-grupo-investigacion {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    align-content: center;
+    justify-items: center;
+
+}
+
+/* 
+lo que llevo
+ */
+
+
+
+
+.galery img {
+    width: 100px;
+    height: auto;
+}
+
+.galery {
+    display: grid;
+    border-radius: 30px;
+    grid-template-columns: repeat(3, 1px);
+    gap: 50px;
+}
+
+@keyframes moverP {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes moverImg {
+    0% {
+        transform: translateY(40%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes loading-indicators {
+   0%{width: 0%;}
+   100%{width: var(--wth);}
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+}
